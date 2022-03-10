@@ -7,10 +7,10 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='google-alerts',
-    version='0.2.9',
+    name='google-alerts-v2',
+    version='0.2.10',
     description='Abstraction to manage Google Alerts from code',
-    url="https://github.com/9b/google-alerts",
+    url="https://github.com/rockerbox/google-alerts",
     author="Brandon Dixon",
     author_email="brandon@9bplus.com",
     license="MIT",
@@ -32,5 +32,5 @@ setup(
     },
     zip_safe=False,
     keywords=['google', 'alerts', 'automation', 'administration'],
-    download_url='https://github.com/9b/google-alerts/archive/master.zip'
+    download_url='https://github.com/rockerbox/google-alerts/archive/master.zip'
 )
