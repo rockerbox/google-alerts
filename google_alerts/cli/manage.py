@@ -27,7 +27,8 @@ __status__ = "BETA"
 
 
 AUTH_COOKIE_NAME = 'SIDCC'
-CONFIG_PATH = os.path.expanduser('~/.config/google_alerts')
+DEFAULT_PATH = '~/.config/google_alerts'
+CONFIG_PATH = os.path.expanduser(os.getenv('GOOGLE_ALERTS_CONFIG_PATH', DEFAULT_PATH))
 CONFIG_FILE = os.path.join(CONFIG_PATH, 'config.json')
 SESSION_FILE = os.path.join(CONFIG_PATH, 'session')
 CONFIG_DEFAULTS = {'email': '', 'password': '', 'py2': PY2}
